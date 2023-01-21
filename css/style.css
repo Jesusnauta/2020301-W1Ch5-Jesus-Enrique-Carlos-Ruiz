@@ -1,9 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-header {
-  color: aquamarine;
+.container__header {
+  padding: 36px 32px;
+  font-family: "Poppins";
+  background-image: url("../public/assets/HeroSection.svg");
+  height: 1210px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.container__header .header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.container__header .header-nav .nav-menu {
+  display: none;
+}
+.container__header .header-nav .nav-logo {
+  display: flex;
+  flex-direction: row;
+}
+.container__header .header-tittle {
+  font-family: "Playfair Display";
+  font-weight: 400px;
+  margin-block-start: 100px;
+  font-style: italic;
+  font-size: 48px;
+  height: 53px;
+  text-align: left;
+}
+
+.header-subtittle {
+  font-family: "Rubik";
+  font-weight: 400px;
+  font-size: 22px;
+  text-align: left;
+  height: 21px;
+  margin-block-start: 115px;
 }
 
 /*# sourceMappingURL=style.css.map */
