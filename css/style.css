@@ -119,6 +119,7 @@ main {
 }
 .block__main {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .block__main__list {
   display: flex;
@@ -166,10 +167,36 @@ main {
   font-size: 1.1rem;
 }
 .block__nav-buttons {
-  margin-top: 6rem;
   display: flex;
   gap: 2rem;
   justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 0 1.5rem;
+  }
+  .block {
+    display: grid;
+    grid-template-areas: "block-header block-buttons" "block-main black-main";
+  }
+  .block__nav-buttons {
+    justify-content: flex-end;
+  }
+  .block__nav-buttons img {
+    width: 3rem;
+  }
+}
+.block__header {
+  grid-area: block-header;
+}
+
+.block__main {
+  grid-area: block-main;
+}
+
+.bloc__nav-buttons {
+  grid-area: block-buttons;
 }
 
 /*# sourceMappingURL=style.css.map */

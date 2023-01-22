@@ -90,6 +90,7 @@
 main {
   padding: 0 1rem;
 }
+
 .block {
   display: flex;
   flex-direction: column;
@@ -119,6 +120,7 @@ main {
 
   &__main {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     &__list {
       display: flex;
       flex-wrap: nowrap;
@@ -166,9 +168,37 @@ main {
     }
   }
   &__nav-buttons {
-    margin-top: 6rem;
     display: flex;
     gap: 2rem;
     justify-content: center;
   }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 0 1.5rem;
+  }
+
+  .block {
+    display: grid;
+    grid-template-areas:
+      "block-header block-buttons"
+      "block-main black-main";
+
+    &__nav-buttons {
+      justify-content: flex-end;
+      & img {
+        width: 3rem;
+      }
+    }
+  }
+}
+.block__header {
+  grid-area: block-header;
+}
+.block__main {
+  grid-area: block-main;
+}
+.bloc__nav-buttons {
+  grid-area: block-buttons;
 }
