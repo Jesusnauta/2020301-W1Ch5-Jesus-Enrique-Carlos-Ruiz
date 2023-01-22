@@ -40,3 +40,18 @@
   height: 21px;
   margin-block-start: 115px;
 }
+
+.container_footer {
+  background-color: #0b171e;
+  color: white;
+  font-family: "Poppins";
+  font-size: 10px;
+  display: flex;
+  padding: 14px;
+  padding-inline-end: 135px;
+  flex-direction: column;
+  padding-block-start: 40px;
+  .footer-tittle {
+    font-size: 30px;
+  }
+}
