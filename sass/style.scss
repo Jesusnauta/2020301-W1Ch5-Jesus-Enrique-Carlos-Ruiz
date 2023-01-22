@@ -90,73 +90,115 @@
 main {
   padding: 0 1rem;
 }
+
 .block {
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 5rem 0;
+  margin: 4rem 0 4rem 0;
 
   &__header {
     display: flex;
     flex-direction: column;
+
+    &__title {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-size: 40px;
+      color: #172432;
+    }
+    &__orange-line {
+      margin-top: 0.8rem;
+      margin-bottom: 1.2rem;
+      margin-right: 50%;
+      border: 0.01rem solid orange;
+    }
+    &__description {
+      font-family: "Rubik";
+      font-size: 1.1rem;
+    }
   }
-  &__title {
-    font-family: "Playfair Display";
-    font-weight: 400;
-    font-size: 40px;
-    color: #172432;
-  }
-  &__orange-line {
-    margin-top: 0.8rem;
-    margin-bottom: 1.2rem;
-    margin-right: 50%;
-    border: 0.01rem solid orange;
-  }
-  &__description {
-    font-family: "Rubik";
-    font-size: 1.1rem;
-  }
+
   &__main {
     margin-top: 4rem;
+    margin-bottom: 4rem;
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      list-style-type: none;
+      padding: 0;
+      &__item {
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        & img {
+          width: 17rem;
+          height: 20rem;
+          object-fit: cover;
+          border-radius: 0.5rem;
+        }
+        &__description {
+          color: white;
+          width: 16rem;
+          height: 20%;
+          padding-left: 1.2rem;
+          position: absolute;
+          top: 70%;
+          &__title {
+            font-size: 1.4rem;
+            font-family: "Playfair Display";
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+          &__ubication {
+            font-family: "Rubik";
+            font-size: 1.05rem;
+            display: flex;
+            & img {
+              width: 12px;
+              height: 16px;
+              margin-right: 0.8rem;
+            }
+            & p {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
   }
-  &__list {
+  &__nav-buttons {
     display: flex;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    padding: 0;
+    gap: 2rem;
+    justify-content: center;
   }
-  &__item {
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 0 1.5rem;
   }
-  &__item img {
-    width: 17rem;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+
+  .block {
+    display: grid;
+    grid-template-areas:
+      "block-header block-buttons"
+      "block-main black-main";
+
+    &__nav-buttons {
+      justify-content: flex-end;
+      & img {
+        width: 3rem;
+      }
+    }
   }
-  &__item-image-description {
-    color: white;
-    width: 16rem;
-    height: 20%;
-    padding-left: 1.2rem;
-    position: absolute;
-    top: 60%;
-  }
-  &__item-image-description-title {
-    font-size: 1.4rem;
-    font-family: "Playfair Display";
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  &__item-image-description-ubication {
-    font-family: "Rubik";
-    font-size: 1.05rem;
-    display: flex;
-  }
-  &__item-image-description-ubication img {
-    width: 1rem;
-    height: 10px;
-  }
+}
+.block__header {
+  grid-area: block-header;
+}
+.block__main {
+  grid-area: block-main;
+}
+.bloc__nav-buttons {
+  grid-area: block-buttons;
 }
