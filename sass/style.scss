@@ -29,14 +29,59 @@
     font-style: italic;
     font-size: 48px;
     height: 53px;
-    text-align: left;
   }
-}
-.header-subtittle {
-  font-family: "Rubik";
-  font-weight: 400px;
-  font-size: 22px;
-  text-align: left;
-  height: 21px;
-  margin-block-start: 115px;
+  .header-subtittle {
+    font-family: "Rubik";
+    font-weight: 400px;
+    font-size: 22px;
+    text-align: left;
+    height: 21px;
+    margin-block-start: 115px;
+  }
+  .header-destination {
+    background-color: white;
+    height: 595px;
+    width: 288px;
+    left: 16px;
+    top: 515px;
+    border-radius: 16px;
+    margin-block-start: 120px;
+    .destination-form {
+      height: 515px;
+      color: black;
+      .form-imput {
+        color: #767e86;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        input {
+          border: none;
+          border-bottom: 1px solid;
+          margin-block-start: 10px;
+          height: 40px;
+          font-family: "Playfair Display";
+        }
+      }
+    }
+    .destination-book {
+      background-color: #ff7757;
+      height: 128px;
+      width: 288px;
+      left: 0px;
+      top: 467px;
+      padding: 40px 20px 40px 20px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      display: flex;
+      justify-content: space-between;
+      .book-now {
+        font-size: 36px;
+        font-family: "Playfair Display";
+      }
+      .book-arrow {
+        display: flex;
+        margin-block-start: 14px;
+      }
+    }
+  }
 }
