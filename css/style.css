@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,6 +42,76 @@
   text-align: left;
   height: 21px;
   margin-block-start: 115px;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0 5rem 0;
+}
+.block__header {
+  display: flex;
+  flex-direction: column;
+}
+.block__title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 40px;
+  color: #172432;
+}
+.block__orange-line {
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+  margin-right: 50%;
+  border: 0.01rem solid orange;
+}
+.block__description {
+  font-family: "Rubik";
+  font-size: 1.1rem;
+}
+.block__main {
+  margin-top: 4rem;
+}
+.block__list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  padding: 0;
+}
+.block__item {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.block__item img {
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.block__item-image-description {
+  color: white;
+  width: 16rem;
+  height: 20%;
+  padding-left: 1.2rem;
+  position: absolute;
+  top: 60%;
+}
+.block__item-image-description-title {
+  font-size: 1.4rem;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.block__item-image-description-ubication {
+  font-family: "Rubik";
+  font-size: 1.05rem;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
