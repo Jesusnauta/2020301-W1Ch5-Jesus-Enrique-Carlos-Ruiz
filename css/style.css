@@ -51,7 +51,7 @@
   font-style: Medium;
   font-size: 12px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 .container__footer .footer-tittle {
   font-size: 30px;
@@ -83,7 +83,7 @@
   flex-direction: row;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1320px) {
   .container__footer {
     flex-direction: row;
   }

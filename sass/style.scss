@@ -48,8 +48,9 @@
   font-family: "Poppins";
   font-style: Medium;
   font-size: 12px;
+
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   .footer-tittle {
     font-size: 30px;
     margin-left: 10px;
@@ -81,7 +82,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1320px) {
   .container__footer {
     flex-direction: row;
   }
